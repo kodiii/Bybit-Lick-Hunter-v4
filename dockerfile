@@ -8,7 +8,7 @@ RUN apt-get update && \
     npm install -g pm2
 
 # Clone and install the application
-# RUN git clone https://github.com/CryptoGnome/Bybit-Lick-Hunter-v4.git /app
+RUN git clone https://github.com/kodiii/Bybit-Lick-Hunter-v4.git /app
 
 WORKDIR /app
 
