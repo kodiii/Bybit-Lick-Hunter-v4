@@ -153,10 +153,10 @@ server.listen(PORT, () => {
 
 //create ws client
 const wsClient = new WebsocketClient({
-    key: key,
-    secret: secret,
+    key: keyWsTestnet,
+    secret: secretWsTestnet,
     market: 'linear',
-    livenet: true,
+    livenet: false,
 });
 const binanceClient = new binanceWS({
     beautify: true,
