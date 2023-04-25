@@ -12,7 +12,8 @@ RUN git clone https://github.com/CryptoGnome/Bybit-Lick-Hunter-v4.git /app
 
 WORKDIR /app
 
-RUN npm install
+RUN apt-get update && apt-get install -y nano && \
+    npm install
 RUN cp example.env .env
 
 # Set environment variables for .env file
